@@ -1,16 +1,14 @@
 ---
 title: "Creating Assets"
-description: "Learn how to create and manage assets in Smartspanner CMMS."
+description: "Learn how to add, edit and manage your assets within Smartspanner."
 permalink: /assets/creating/
 section: "Assets"
 ---
 
 # Creating Assets
 
-Learn how to create and manage assets in Smartspanner CMMS.
+Learn how to add, edit and manage your assets within Smartspanner.
 
-<div class="video-placeholder">
-  <div class="video-placeholder-inner">
-    Video coming soon...
-  </div>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/dKVvfzucEy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
