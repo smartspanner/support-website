@@ -1,0 +1,57 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Smart Spanner Support" class="logo-img">
+    </a>
+  </div>
+  <div class="search-container">
+    <div class="search-input-wrapper">
+      <i data-lucide="search" class="search-icon"></i>
+      <input type="text" id="menu-search" class="search-input" placeholder="Search menu..." autocomplete="off">
+      <button type="button" id="search-clear" class="search-clear" style="display: none;">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div id="search-results" class="search-results" style="display: none;"></div>
+  </div>
+  <div class="nav-controls">
+    <button class="expand-btn" onclick="toggleAllSections(true)">Expand All</button>
+    <button class="collapse-btn" onclick="toggleAllSections(false)">Collapse All</button>
+  </div>
+  <nav class="nav-list">
+    {% for section in site.data.navigation %}
+    <div class="nav-section{% if page.section == section.name %} expanded{% endif %}">
+      <button class="nav-section-btn" onclick="toggleSection(this)">
+        <span class="nav-section-icon"><i data-lucide="{{ section.icon }}"></i></span>
+        <span class="nav-section-title">{{ section.name }}</span>
+        <i data-lucide="chevron-right" class="chevron"></i>
+      </button>
+      <ul class="nav-items">
+        {% for item in section.items %}
+        <li><a href="{{ item.url | relative_url }}" class="nav-link{% if page.url == item.url %} active{% endif %}"><span class="nav-link-icon"><i data-lucide="{{ item.icon | default: 'file-text' }}"></i></span>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </nav>
+</aside>
+<script>
+  // Menu data for search functionality
+  window.menuData = [
+    {% for section in site.data.navigation %}
+    {
+      "section": "{{ section.name }}",
+      "sectionIcon": "{{ section.icon }}",
+      "items": [
+        {% for item in section.items %}
+        {
+          "title": "{{ item.title }}",
+          "url": "{{ item.url | relative_url }}",
+          "icon": "{{ item.icon | default: 'file-text' }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+</script>

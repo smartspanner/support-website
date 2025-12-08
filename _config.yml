@@ -1,0 +1,47 @@
+title: Smart Spanner Support
+description: Support documentation for Smart Spanner CMMS - Computerized Maintenance Management System. Learn how to manage procedures, checklists, lockouts, condition monitoring, and more.
+url: "https://support.smartspanner.com"
+baseurl: ""
+
+# SEO and Social
+author: Smart Spanner
+logo: /assets/images/logo.png
+lang: en_US
+
+social:
+  name: Smart Spanner
+  links:
+    - https://www.linkedin.com/company/smartspanner
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+# Collections for pages
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

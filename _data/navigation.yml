@@ -1,0 +1,97 @@
+- name: Getting Started
+  icon: rocket
+  items:
+    - title: Home
+      url: /
+      icon: home
+    - title: Users
+      url: /getting-started/users/
+      icon: users
+    - title: Sites
+      url: /getting-started/sites/
+      icon: map
+    - title: Company Profile
+      url: /getting-started/company-profile/
+      icon: building-2
+
+- name: Assets
+  icon: file-text
+  items:
+    - title: Creating Assets
+      url: /assets/creating/
+      icon: file-plus
+    - title: Importing Assets
+      url: /assets/importing/
+      icon: upload
+    - title: Asset Label Scanning
+      url: /assets/label-scanning/
+      icon: qr-code
+
+- name: Work Orders
+  icon: wrench
+  items:
+    - title: Creating Work Orders
+      url: /work-orders/creating/
+      icon: plus-circle
+    - title: Recurring Work Orders
+      url: /work-orders/recurring/
+      icon: repeat
+    - title: Managing Requests
+      url: /work-orders/managing-requests/
+      icon: bookmark
+    - title: Custom WO Types
+      url: /work-orders/custom-types/
+      icon: square-pen
+
+- name: Spare Parts
+  icon: settings
+  items:
+    - title: Creating Spare Parts
+      url: /spare-parts/creating/
+      icon: file-plus
+    - title: Stock Takes
+      url: /spare-parts/stock-takes/
+      icon: clipboard-list
+    - title: Importing Spares
+      url: /spare-parts/importing/
+      icon: upload
+
+- name: Procedures & Checklists
+  icon: book-open
+  items:
+    - title: Procedures
+      url: /procedures/
+      icon: book-open
+    - title: Checklists
+      url: /checklists/
+      icon: check-square
+
+- name: Safety
+  icon: lock
+  items:
+    - title: Lockouts
+      url: /lockouts/
+      icon: lock
+
+- name: Resources
+  icon: briefcase
+  items:
+    - title: Subcontractors
+      url: /subcontractors/
+      icon: users
+    - title: Tags
+      url: /tags/
+      icon: tag
+
+- name: Monitoring & Analytics
+  icon: activity
+  items:
+    - title: Condition Monitoring
+      url: /condition-monitoring/
+      icon: activity
+    - title: Reports
+      url: /reports/
+      icon: bar-chart-3
+    - title: Performance and KPIs
+      url: /performance-kpis/
+      icon: trending-up
