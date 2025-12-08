@@ -1,16 +1,14 @@
 ---
 title: "Importing Assets"
-description: "Learn how to bulk import assets into Smartspanner CMMS."
+description: "A quick demonstration of how to import your assets into Smartspanner using our template."
 permalink: /assets/importing/
 section: "Assets"
 ---
 
 # Importing Assets
 
-Learn how to bulk import assets into Smartspanner CMMS.
+A quick demonstration of how to import your assets into Smartspanner using our template. Please contact us for a copy of the template.
 
-<div class="video-placeholder">
-  <div class="video-placeholder-inner">
-    Video coming soon...
-  </div>
+<div class="video-container">
+  <iframe src="https://player.vimeo.com/video/1113891676" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Importing Assets"></iframe>
 </div>

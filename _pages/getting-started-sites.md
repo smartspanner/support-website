@@ -1,16 +1,14 @@
 ---
 title: "Sites"
-description: "Learn how to set up and manage multiple sites in Smartspanner CMMS."
+description: "This short video will guide you through setting up sites in Smartspanner."
 permalink: /getting-started/sites/
 section: "Getting Started"
 ---
 
 # Sites
 
-Learn how to set up and manage multiple sites in Smartspanner CMMS.
+This short video will guide you through setting up sites in Smartspanner. Sites are groups of assets, typically geographical locations or buildings. When creating sites, consider that user permissions can be set up for each user per site.
 
-<div class="video-placeholder">
-  <div class="video-placeholder-inner">
-    Video coming soon...
-  </div>
+<div class="video-container">
+  <iframe src="https://player.vimeo.com/video/1112036715" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Sites"></iframe>
 </div>

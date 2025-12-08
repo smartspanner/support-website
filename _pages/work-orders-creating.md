@@ -1,16 +1,14 @@
 ---
 title: "Creating Work Orders"
-description: "Learn how to create and manage work orders in Smartspanner CMMS."
+description: "Introduction to creating work orders in Smartspanner."
 permalink: /work-orders/creating/
 section: "Work Orders"
 ---
 
 # Creating Work Orders
 
-Learn how to create and manage work orders in Smartspanner CMMS.
+Introduction to creating work orders in Smartspanner.
 
-<div class="video-placeholder">
-  <div class="video-placeholder-inner">
-    Video coming soon...
-  </div>
+<div class="video-container">
+  <iframe src="https://player.vimeo.com/video/907257507" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
