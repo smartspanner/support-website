@@ -20,6 +20,14 @@
   </div>
   <nav class="nav-list">
     {% for section in site.data.navigation %}
+    {% if section.standalone %}
+    <div class="nav-section standalone">
+      <a href="{{ section.url | relative_url }}" class="nav-section-link{% if page.url == section.url %} active{% endif %}">
+        <span class="nav-section-icon"><i data-lucide="{{ section.icon }}"></i></span>
+        <span class="nav-section-title">{{ section.name }}</span>
+      </a>
+    </div>
+    {% else %}
     <div class="nav-section{% if page.section == section.name %} expanded{% endif %}">
       <button class="nav-section-btn" onclick="toggleSection(this)">
         <span class="nav-section-icon"><i data-lucide="{{ section.icon }}"></i></span>
@@ -32,6 +40,7 @@
         {% endfor %}
       </ul>
     </div>
+    {% endif %}
     {% endfor %}
   </nav>
 </aside>
@@ -42,7 +51,10 @@
     {
       "section": "{{ section.name }}",
       "sectionIcon": "{{ section.icon }}",
+      "standalone": {{ section.standalone | default: false }},
+      "url": "{{ section.url | relative_url }}",
       "items": [
+        {% if section.items %}
         {% for item in section.items %}
         {
           "title": "{{ item.title }}",
@@ -50,6 +62,7 @@
           "icon": "{{ item.icon | default: 'file-text' }}"
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
+        {% endif %}
       ]
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}

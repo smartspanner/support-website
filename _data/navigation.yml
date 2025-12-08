@@ -1,9 +1,11 @@
+- name: Home
+  icon: home
+  url: /
+  standalone: true
+
 - name: Getting Started
   icon: rocket
   items:
-    - title: Home
-      url: /
-      icon: home
     - title: Users
       url: /getting-started/users/
       icon: users
@@ -56,42 +58,42 @@
       url: /spare-parts/importing/
       icon: upload
 
-- name: Procedures & Checklists
+- name: Procedures
   icon: book-open
-  items:
-    - title: Procedures
-      url: /procedures/
-      icon: book-open
-    - title: Checklists
-      url: /checklists/
-      icon: check-square
+  url: /procedures/
+  standalone: true
 
-- name: Safety
+- name: Checklists
+  icon: check-square
+  url: /checklists/
+  standalone: true
+
+- name: Lockouts
   icon: lock
-  items:
-    - title: Lockouts
-      url: /lockouts/
-      icon: lock
+  url: /lockouts/
+  standalone: true
 
-- name: Resources
-  icon: briefcase
-  items:
-    - title: Subcontractors
-      url: /subcontractors/
-      icon: users
-    - title: Tags
-      url: /tags/
-      icon: tag
+- name: Subcontractors
+  icon: users
+  url: /subcontractors/
+  standalone: true
 
-- name: Monitoring & Analytics
+- name: Tags
+  icon: tag
+  url: /tags/
+  standalone: true
+
+- name: Condition Monitoring
   icon: activity
-  items:
-    - title: Condition Monitoring
-      url: /condition-monitoring/
-      icon: activity
-    - title: Reports
-      url: /reports/
-      icon: bar-chart-3
-    - title: Performance and KPIs
-      url: /performance-kpis/
-      icon: trending-up
+  url: /condition-monitoring/
+  standalone: true
+
+- name: Reports
+  icon: bar-chart-3
+  url: /reports/
+  standalone: true
+
+- name: Performance and KPIs
+  icon: trending-up
+  url: /performance-kpis/
+  standalone: true

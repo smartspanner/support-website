@@ -246,6 +246,29 @@ body {
   margin-bottom: 0.125rem;
 }
 
+/* Standalone nav links (no sub-items) */
+.nav-section.standalone .nav-section-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.nav-section.standalone .nav-section-link:hover {
+  background: var(--hover-bg);
+  color: var(--text-primary);
+}
+
+.nav-section.standalone .nav-section-link.active {
+  color: var(--accent-yellow);
+  background: var(--active-bg);
+}
+
 .nav-section-btn {
   width: 100%;
   display: flex;
