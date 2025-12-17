@@ -15,44 +15,7 @@ Smartspanner is a Computerized Maintenance Management System (CMMS) designed to 
 
 ## What You'll Find Here
 
-Use the sidebar to navigate through the support sections:
-
-### Getting Started
-- **Users** - Add, edit and manage users
-- **Sites** - Set up and manage multiple sites
-- **Company Profile** - Configure your company settings
-
-### Assets
-- **Creating Assets** - Create and manage your assets
-- **Importing Assets** - Bulk import asset data
-- **Asset Label Scanning** - QR code and barcode scanning
-
-### Work Orders
-- **Creating Work Orders** - Create and manage work orders
-- **Recurring Work Orders** - Set up preventive maintenance schedules
-- **Managing Requests** - Handle work requests
-- **Custom WO Types** - Configure custom work order types
-
-### Spare Parts
-- **Creating Spare Parts** - Manage spare parts inventory
-- **Stock Takes** - Perform inventory counts
-- **Importing Spares** - Bulk import spare parts data
-
-### Procedures & Checklists
-- **Procedures** - Create maintenance procedures
-- **Checklists** - Set up and perform checklist routines
-
-### Safety
-- **Lockouts** - Digital tracking of asset lockouts (LOTO)
-
-### Resources
-- **Subcontractors** - Manage external maintenance resources
-- **Tags** - Organize and categorize your maintenance data
-
-### Monitoring & Analytics
-- **Condition Monitoring** - Trigger work orders based on meter thresholds
-- **Reports** - Gain insights into your maintenance operations
-- **Performance and KPIs** - Track team performance metrics
+Use the sidebar to navigate through the support sections and watch video tutorials on each section. If you are just getting started we recommend following each section in sequence in the getting started section, then setting up assets and creating your work orders. This will cover the basics of Smartspanner CMMS.
 
 ## Looking for More Help?
 
