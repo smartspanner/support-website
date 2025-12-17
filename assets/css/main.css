@@ -245,6 +245,27 @@ body {
   font-size: 0.8125rem;
 }
 
+/* Search result header button (for expandable sections) */
+.search-result-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.search-result-header .result-hint {
+  font-size: 0.625rem;
+  color: var(--text-muted);
+  margin-left: auto;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.search-result-header:hover .result-hint {
+  opacity: 1;
+}
+
 .nav-controls {
   display: flex;
   gap: 0.5rem;
