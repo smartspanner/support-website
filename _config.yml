@@ -1,17 +1,27 @@
-title: Smart Spanner Support
-description: Support documentation for Smart Spanner CMMS - Computerized Maintenance Management System. Learn how to manage procedures, checklists, lockouts, condition monitoring, and more.
+# Site settings
+title: Smartspanner Support
+description: Support documentation and video tutorials for Smartspanner CMMS - Computerized Maintenance Management System. Learn how to manage assets, work orders, spare parts, procedures, and more.
 url: "https://support.smartspanner.com"
 baseurl: ""
 
 # SEO and Social
-author: Smart Spanner
-logo: /assets/images/logo.png
-lang: en_US
+author: Smartspanner Ltd
+logo: /assets/images/smartspanner-logo.png
+lang: en_GB
 
+# Social profiles
 social:
-  name: Smart Spanner
+  name: Smartspanner
   links:
     - https://www.linkedin.com/company/smartspanner
+    - https://www.smartspanner.com
+
+# Twitter card settings
+twitter:
+  card: summary_large_image
+
+# Default image for social sharing
+defaults_image: /assets/images/og-image.png
 
 # Build settings
 markdown: kramdown
@@ -19,6 +29,10 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
+  hard_wrap: false
+
+# Permalink structure for SEO-friendly URLs
+permalink: pretty
 
 # Collections for pages
 collections:
@@ -26,22 +40,46 @@ collections:
     output: true
     permalink: /:path/
 
-# Defaults
+# Defaults for all pages
 defaults:
   - scope:
-      path: ""
+      path: "_pages"
       type: "pages"
     values:
       layout: "default"
+      image: /assets/images/og-image.png
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: /assets/images/og-image.png
 
 # Exclude from build
 exclude:
   - README.md
+  - AGENTS.md
   - Gemfile
   - Gemfile.lock
   - vendor
+  - node_modules
+  - .git
+  - .gitignore
 
 # Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Sitemap settings
+sitemap:
+  exclude:
+    - /404.html
+
+# Compress HTML output
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false

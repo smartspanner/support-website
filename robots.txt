@@ -1,0 +1,11 @@
+# Robots.txt for Smartspanner Support
+# https://support.smartspanner.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://support.smartspanner.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
