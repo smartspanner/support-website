@@ -15,22 +15,22 @@
   --color-secondary: #52565e;
   --color-default: #364d59;
   
-  /* Dark Theme */
-  --bg-gradient-start: #0f172a;
-  --bg-gradient-end: #1e293b;
-  --sidebar-bg: rgba(15, 23, 42, 0.95);
-  --card-bg: rgba(255, 255, 255, 0.1);
-  --card-border: rgba(255, 255, 255, 0.2);
+  /* Dark Theme - Based on SmartSpanner brand gray (#52565e) */
+  --bg-gradient-start: #2e3035;
+  --bg-gradient-end: #3d4147;
+  --sidebar-bg: rgba(46, 48, 53, 0.98);
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --card-border: rgba(255, 255, 255, 0.12);
   --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.8);
-  --text-muted: rgba(255, 255, 255, 0.7);
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-muted: rgba(255, 255, 255, 0.65);
   
   /* Accent Colors (mapped to brand) */
   --accent-yellow: var(--color-primary);
   --accent-orange: var(--color-primary-hover);
   --accent-gradient: linear-gradient(to right, var(--color-primary), var(--color-primary-hover));
-  --hover-bg: rgba(255, 255, 255, 0.1);
-  --active-bg: rgba(254, 185, 0, 0.1);
+  --hover-bg: rgba(254, 185, 0, 0.08);
+  --active-bg: rgba(254, 185, 0, 0.15);
   --active-border: var(--color-primary);
 }
 
