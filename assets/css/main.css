@@ -655,7 +655,7 @@ img {
   display: none;
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
   z-index: 200;
   background: var(--card-bg);
   backdrop-filter: blur(10px);
