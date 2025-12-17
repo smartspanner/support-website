@@ -1,4 +1,6 @@
-/* Smart Spanner Support - Dark Theme with Glassmorphism (Yellow/Orange Accents) */
+/* SmartSpanner Support - Dark Theme with Glassmorphism
+   Brand Colors: Primary #feb900 (yellow), Secondary #52565e (gray)
+-------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,14 @@
 }
 
 :root {
+  /* SmartSpanner Brand Colors */
+  --color-primary: #feb900;
+  --color-primary-hover: #ffc732;
+  --color-primary-dark: #e5a700;
+  --color-secondary: #52565e;
+  --color-default: #364d59;
+  
+  /* Dark Theme */
   --bg-gradient-start: #0f172a;
   --bg-gradient-end: #1e293b;
   --sidebar-bg: rgba(15, 23, 42, 0.95);
@@ -14,12 +24,14 @@
   --text-primary: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.8);
   --text-muted: rgba(255, 255, 255, 0.7);
-  --accent-yellow: #F5AF00;
-  --accent-orange: #fbbf24;
-  --accent-gradient: linear-gradient(to right, #F5AF00, #fbbf24);
+  
+  /* Accent Colors (mapped to brand) */
+  --accent-yellow: var(--color-primary);
+  --accent-orange: var(--color-primary-hover);
+  --accent-gradient: linear-gradient(to right, var(--color-primary), var(--color-primary-hover));
   --hover-bg: rgba(255, 255, 255, 0.1);
-  --active-bg: rgba(245, 175, 0, 0.1);
-  --active-border: #F5AF00;
+  --active-bg: rgba(254, 185, 0, 0.1);
+  --active-border: var(--color-primary);
 }
 
 html {
