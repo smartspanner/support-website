@@ -39,19 +39,33 @@ git add -A && git commit -m "prefix: description" && git push
 # SmartSpanner Support Docs - Jekyll
 
 ## Overview
-Support documentation site for SmartSpanner CMMS users.
+Support documentation site for SmartSpanner CMMS users. Built with Jekyll, deployed to GitHub Pages.
 
 ## Access
 - **Production**: https://support.smartspanner.com
-- **Local Dev**: http://localhost:8080/smartspanner-support
+- **Local Dev**: https://tenx.fraction.app/support.smartspanner.com/
+- **Build Output**: `/home/dev/tenx/apps/websites/support.smartspanner.com/_site/`
 
-## Build Commands
+## Important: Two Configuration Files
+
+### `_config.yml` (Production) - DO NOT modify for local dev
+- `url: "https://support.smartspanner.com"`
+- `baseurl: ""`
+
+### `_config_dev.yml` (Development) - Use for local dev
+- `url: "https://tenx.fraction.app"`
+- `baseurl: "/support.smartspanner.com"`
+
+## Building the Site
+
+**IMPORTANT: After making ANY changes, you MUST rebuild:**
+
 ```bash
-# Build for local development
-docker compose exec jekyll jekyll build --config _config.yml,_config_dev.yml
+# Build with dev config for local testing
+docker exec websites_jekyll bash -c "cd /srv/support.smartspanner.com && jekyll build --config _config.yml,_config_dev.yml"
 
-# Watch mode
-docker compose exec jekyll jekyll build --config _config.yml,_config_dev.yml --watch
+# Verify build
+curl -I https://tenx.fraction.app/support.smartspanner.com/
 ```
 
 ## Structure
@@ -59,9 +73,11 @@ docker compose exec jekyll jekyll build --config _config.yml,_config_dev.yml --w
 _pages/                    # Documentation pages (Markdown)
 _data/navigation.yml       # Sidebar navigation structure
 _includes/sidebar.html     # Sidebar partial
+assets/images/             # Screenshots
 ```
 
 ## Content Guidelines
 - Write in Markdown with GFM
 - Focus on maintenance management workflows
 - Target audience: Maintenance teams and facilities managers
+- Use `{{ site.baseurl }}/assets/images/...` for image paths
