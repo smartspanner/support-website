@@ -97,3 +97,8 @@
   icon: trending-up
   url: /performance-kpis/
   standalone: true
+
+- name: API
+  icon: code
+  url: /api/
+  standalone: true
