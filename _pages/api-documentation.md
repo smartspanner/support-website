@@ -24,7 +24,7 @@ All API requests require an authentication token. Your token gives access only t
 Send a POST request with your login credentials:
 
 ```
-POST https://app.smartspanner.com/api/mobile/auth/
+POST https://app.smartspanner.com/api/auth/
 
 {
   "username": "your@email.com",
@@ -52,7 +52,7 @@ Authorization: Token abc123def456...
 Your token does not expire. You can verify it at any time:
 
 ```
-GET https://app.smartspanner.com/api/mobile/verify-token/
+GET https://app.smartspanner.com/api/verify-token/
 Authorization: Token abc123def456...
 ```
 
