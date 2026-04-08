@@ -12,7 +12,7 @@ Use the SmartSpanner API to extract your data into Power BI, Excel, or any repor
 ## Base URL
 
 ```
-https://app.smartspanner.com/api/mobile/
+https://app.smartspanner.com/api
 ```
 
 ## Authentication
@@ -63,7 +63,7 @@ Authorization: Token abc123def456...
 1. Open **Power BI Desktop**
 2. Click **Get Data** > **Web**
 3. Select **Advanced**
-4. Enter the endpoint URL, e.g. `https://app.smartspanner.com/api/mobile/tasks/`
+4. Enter the endpoint URL, e.g. `https://app.smartspanner.com/api/tasks`
 5. Add an HTTP request header:
    - **Name:** `Authorization`
    - **Value:** `Token abc123def456...`
@@ -79,8 +79,8 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/sites/` | List all sites |
-| GET | `/sites/{id}/` | Site detail |
+| GET | `/sites` | List all sites |
+| GET | `/sites/{id}` | Site detail |
 
 **Fields:** id, name, site_tz, address1, address2, address3, province, post_code, country, telephone, contact_name, contact_email, assets_count
 
@@ -90,10 +90,8 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/assets/` | List all assets |
-| GET | `/assets/{id}/` | Asset detail |
-| GET | `/assets/{id}/files/` | Asset attachments |
-| GET | `/assets/{id}/procedures/` | Asset procedures |
+| GET | `/asset` | List all assets |
+| GET | `/asset/{id}` | Asset detail |
 
 **List fields:** id, name, assetid, model, serial_number, location, manufacturer, is_active, label_code
 
@@ -105,11 +103,9 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/tasks/` | List all work orders |
-| GET | `/tasks/{id}/` | Work order detail |
-| GET | `/tasks/{id}/spares/` | Spare usage for a work order |
-| GET | `/tasks/types/` | List work order types |
-| GET | `/tasks/status/` | List status options |
+| GET | `/tasks` | List all work orders |
+| GET | `/tasks/{id}` | Work order detail |
+| GET | `/tasks/types` | List work order types |
 
 **List fields:** id, title, status, priority, date, deadline, asset, creator, type
 
@@ -123,9 +119,9 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/spares/` | List all spares |
-| GET | `/spares/{id}/` | Spare detail |
-| GET | `/spares/{id}/stocks/` | Stock levels by location |
+| GET | `/spare` | List all spares |
+| GET | `/spare/{id}` | Spare detail |
+| GET | `/spare/{spare_id}/stock` | Stock levels by location |
 
 **Fields:** id, name, part_number, stocks (array with location, quantity, reorder level)
 
@@ -135,8 +131,8 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/users/` | List active users |
-| GET | `/users/{id}/` | User detail |
+| GET | `/users` | List active users |
+| GET | `/users/{id}` | User detail |
 
 **Fields:** id, first_name, last_name, email, role, phone, profile, hourly_rate, is_active
 
@@ -146,9 +142,8 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/lockouts/` | List lockouts |
-| GET | `/lockouts/{id}/` | Lockout detail |
-| GET | `/lockouts/count/` | Count of active lockouts |
+| GET | `/lockouts` | List lockouts |
+| GET | `/lockouts/{id}` | Lockout detail |
 
 ---
 
@@ -156,8 +151,7 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/subcontractors/` | List subcontractors |
-| GET | `/subcontractors/{id}/jobs/` | Jobs for a subcontractor |
+| GET | `/subcontractors` | List subcontractors |
 
 ---
 
@@ -165,8 +159,8 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/procedures/` | List procedures |
-| GET | `/procedures/{id}/` | Procedure detail |
+| GET | `/procedures` | List procedures |
+| GET | `/procedures/{id}` | Procedure detail |
 
 **Fields:** id, title, description
 
@@ -176,8 +170,8 @@ Repeat for each endpoint you want to import (assets, spares, etc.). Set the data
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/manufacturers/` | List manufacturers |
-| GET | `/suppliers/` | List suppliers |
+| GET | `/manufacturer` | List manufacturers |
+| GET | `/supplier` | List suppliers |
 
 **Supplier fields:** id, name, phone, email, website, currency, address1, city, country
 
