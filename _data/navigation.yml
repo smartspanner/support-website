@@ -73,6 +73,11 @@
   url: /lockouts/
   standalone: true
 
+- name: Fire Risk Assessments
+  icon: flame
+  url: /fire-risk-assessments/
+  standalone: true
+
 - name: Subcontractors
   icon: users
   url: /subcontractors/
