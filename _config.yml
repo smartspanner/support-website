@@ -1,6 +1,6 @@
 # Site settings
 title: Smartspanner Support
-description: Support documentation and video tutorials for Smartspanner CMMS - Computerized Maintenance Management System. Learn how to manage assets, work orders, spare parts, procedures, and more.
+description: Smartspanner support is now available from the Smartspanner app.
 url: "https://support.smartspanner.com"
 baseurl: ""
 
@@ -21,7 +21,7 @@ twitter:
   card: summary_large_image
 
 # Default image for social sharing
-defaults_image: /assets/images/og-image.png
+defaults_image: /assets/images/smartspanner-moved.png
 
 # Build settings
 markdown: kramdown
@@ -37,7 +37,7 @@ permalink: pretty
 # Collections for pages
 collections:
   pages:
-    output: true
+    output: false
     permalink: /:path/
 
 # Defaults for all pages
@@ -47,12 +47,12 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      image: /assets/images/og-image.png
+      image: /assets/images/smartspanner-moved.png
   - scope:
       path: ""
     values:
       layout: "default"
-      image: /assets/images/og-image.png
+      image: /assets/images/smartspanner-moved.png
 
 # Exclude from build
 exclude:
