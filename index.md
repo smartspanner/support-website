@@ -8,7 +8,7 @@ layout: landing
 <main class="landing" aria-label="Smartspanner support">
   <section class="landing-content">
     <div class="landing-image">
-      <img src="{{ '/assets/images/smartspanner-moved.png' | relative_url }}" width="260" height="260" style="display:block;width:260px;max-width:calc(100vw - 2rem);height:auto;margin:0 auto;border-radius:0;object-fit:contain;" alt="Smartspanner support has moved to the Smartspanner app">
+      <img src="{{ '/assets/images/smartspanner-moved.png' | relative_url }}" width="520" height="520" style="display:block;width:520px;max-width:calc(100vw - 2rem);height:auto;margin:0 auto;border-radius:0;object-fit:contain;" alt="Smartspanner support has moved to the Smartspanner app">
     </div>
     <a class="landing-login" style="display:inline-flex;align-items:center;justify-content:center;margin:1.25rem auto 0;" href="https://app.smartspanner.com/">Login</a>
   </section>
