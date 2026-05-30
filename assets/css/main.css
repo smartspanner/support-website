@@ -733,13 +733,11 @@ img {
 }
 
 .landing-login {
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 2.75rem;
+  margin-top: 1.5rem;
   padding: 0 1.25rem;
   background: #feb900;
   color: #1f2328;
@@ -786,11 +784,5 @@ img {
 @media (max-width: 640px) {
   .landing {
     align-items: flex-start;
-    padding-top: 6rem;
-  }
-
-  .landing-login {
-    top: 1rem;
-    right: 1rem;
   }
 }
